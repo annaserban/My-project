@@ -1,0 +1,24 @@
+#include<iostream>
+int main()
+{
+int numar;
+std::cin>>numar;
+bool repeat = true;
+while(repeat)
+{
+if(numar<10)
+{
+  std::cout<<"Caut un numar mai mare";
+}
+ else if(numar>10)
+{
+   std::cout<<"Caut un numar mai mic";
+}
+else
+{
+std::cout<<"Corect!";
+}
+repeat=false;
+}
+return 0;
+}
