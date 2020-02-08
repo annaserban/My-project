@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+class Room {
+public:
+  int X,Y;
+
+  int sum (int x, int y)  
+   { return x+y; };
+    int multip (int x, int y)  
+   { return x*y; };
+    int subtr (int x, int y)  
+   { return x-y; };
+    int divis(int x, int y)  
+   { if (y!=0)
+     {
+       return x/y;}
+      else {
+       std::cout<<"The operations cannot be performed.";}
+       return 0;
+   };
+void doRoom ()
+{
+    std::cout<<"All the people must to know some simple operations. For example:"<< sum (X,Y) << " = "<< X << "+"<< Y <<std::endl;
+    std::cout<<multip (X,Y) << " = "<< X << "*"<< Y <<std::endl;
+    std::cout<<subtr (X,Y) << " = "<< X << "-"<< Y <<std::endl;
+    std::cout<<divis (X,Y) << " = "<< X << "/"<< Y <<std::endl;
+}
+};
+int main()
+{
+Room object;
+
+ std::cout << "I had 5 items and I received 6 items. Now I have " << object.sum(5, 6) <<" items."<<std::endl;
+object.X = 10;
+object.Y = 2;
+object.doRoom();
+return 0;
+}
