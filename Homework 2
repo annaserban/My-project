@@ -15,16 +15,18 @@ int main ()
 	     }
       if (i < 10)
 	   {
-	  std::cout << i;
+	  std::cout << i<<std::endl;
 	    }
      else if(i < 20)
 	  {
-	  std::cout <<"Treci la nr urmator.";
+	  continue;
 	    }
    }
    repeat = false;
 }
+   std::cout<<sum<<std::endl;
    return 0;
+
 }
 
 2)
