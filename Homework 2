@@ -4,9 +4,6 @@ int main ()
 {
   int i;
   int sum = 0;
-  bool repeat = true;
-  while (repeat)
-{
   for (i = 0; i < 100; i++)
   {
       if(i % 2 == 0)
@@ -22,11 +19,8 @@ int main ()
 	  continue;
 	    }
    }
-   repeat = false;
-}
    std::cout<<sum<<std::endl;
    return 0;
-
 }
 
 2)
