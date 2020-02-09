@@ -54,6 +54,8 @@ int main ()
 	  std::cout << "Buzz";
 	  std::cout << std::endl;
 	     }
+	else
+	 {std::cout<<i<<std::endl;}
 	   }
    }
    return 0;
