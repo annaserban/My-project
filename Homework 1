@@ -2,24 +2,24 @@
 int main()
 {
 int numar1=10, numar2;
-std::cout<<"Care este numarul? ";
-std::cin>>numar2;
 bool repeat = true;
 while(repeat)
 {
+std::cout<<"Care este numarul? ";
+std::cin>>numar2;
 if(numar2<numar1)
 {
-  std::cout<<"Caut un numar mai mare";
+  std::cout<<"Caut un numar mai mare."<<std::endl;
 }
  else if(numar2>numar1)
 {
-   std::cout<<"Caut un numar mai mic";
+   std::cout<<"Caut un numar mai mic."<<std::endl;
 }
 else
 {
 std::cout<<"Corect!";
-}
 repeat=false;
+}
 }
 return 0;
 }
